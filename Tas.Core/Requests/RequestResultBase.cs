@@ -1,8 +1,8 @@
-﻿namespace Tas.Core.Commands
+﻿namespace Tas.Core.Requests
 {
-    public class CommandResultBase : ICommandResult
+    public class RequestResultBase : IRequestResult
     {
-        public CommandResultBase(bool isSuccessful = false, string errorMessage = null)
+        public RequestResultBase(bool isSuccessful = false, string errorMessage = null)
         {
             IsSuccessful = isSuccessful;
             ErrorMessage = errorMessage;

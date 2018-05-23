@@ -1,7 +1,7 @@
 ﻿using Castle.MicroKernel.Registration;
 using Castle.MicroKernel.SubSystems.Configuration;
 using Castle.Windsor;
-using Tas.Core.Commands;
+using Tas.Core.Requests;
 using Tas.Core.Repositories;
 
 namespace Tas.Web.Framework.Installers
@@ -19,8 +19,8 @@ namespace Tas.Web.Framework.Installers
 
             container.Register(
                 Classes
-                    .FromAssemblyContaining<ICommand>()
-                    .InSameNamespaceAs<ICommand>()
+                    .FromAssemblyContaining<IRequest>()
+                    .InSameNamespaceAs<IRequest>()
                     .WithServiceAllInterfaces()
                     .LifestyleTransient());
         }

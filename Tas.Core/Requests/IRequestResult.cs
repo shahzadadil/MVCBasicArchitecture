@@ -1,6 +1,6 @@
-﻿namespace Tas.Core.Commands
+﻿namespace Tas.Core.Requests
 {
-    public interface ICommandResult
+    public interface IRequestResult
     {
         bool IsSuccessful { get; }
         string ErrorMessage { get;}

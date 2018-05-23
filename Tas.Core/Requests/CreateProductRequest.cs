@@ -1,8 +1,8 @@
-﻿namespace Tas.Core.Commands
+﻿namespace Tas.Core.Requests
 {
-    public class CreateProductCommand : ICommand
+    public class CreateProductRequest : IRequest
     {
-        public CreateProductCommand(string name, double price, int username)
+        public CreateProductRequest(string name, double price, int username)
         {
             Name = name;
             Price = price;

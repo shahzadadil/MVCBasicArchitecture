@@ -1,6 +1,6 @@
-﻿namespace Tas.Core.Commands
+﻿namespace Tas.Core.Requests
 {
-    public class CreateProductResult : CommandResultBase
+    public class CreateProductResult : RequestResultBase
     {
         public CreateProductResult(
             int productId, 

@@ -1,22 +1,22 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Rhino.Mocks;
 using System.Threading.Tasks;
-using Tas.Core.Commands;
+using Tas.Core.Requests;
 using Tas.Core.Repositories;
 using Tas.Data.Entities;
 using static Rhino.Mocks.RhinoMocksExtensions;
 
-namespace Tas.Core.Tests.Commands
+namespace Tas.Core.Tests.Requests
 {
     [TestClass]
-    public class CreateProductCommandHandlerTests
+    public class CreateProductRequestHandlerTests
     {
         [TestMethod]
         public void can_create_product()
         {
             //// ARRANGE
-            var command = new CreateProductCommand("TestName", 12.5, 11);
-            var handler = new CreateProductCommandHandler();
+            var request = new CreateProductRequest("TestName", 12.5, 11);
+            var handler = new CreateProductRequestHandler();
 
             var productRepository = MockRepository.GenerateStub<IGenericRepository<Product>>();
             productRepository
@@ -30,7 +30,7 @@ namespace Tas.Core.Tests.Commands
             handler.ProductRepository = productRepository;
 
             //// ACT
-            var result = handler.ExecuteAsync(command).Result;
+            var result = handler.ExecuteAsync(request).Result;
 
             //// ASSERT
             Assert.IsTrue(result.IsSuccessful);

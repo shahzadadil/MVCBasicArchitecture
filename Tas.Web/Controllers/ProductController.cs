@@ -1,13 +1,13 @@
 ﻿using System.Threading.Tasks;
 using System.Web.Mvc;
-using Tas.Core.Commands;
+using Tas.Core.Requests;
 using Tas.Web.Models.Product;
 
 namespace Tas.Web.Controllers
 {
     public class ProductController : Controller
     {
-        public ICommandHandler<CreateProductCommand, CreateProductResult> CeateProductCommandHandler { get; set; }
+        public IRequestHandler<CreateProductRequest, CreateProductResult> CeateProductRequestHandler { get; set; }
 
         // GET: Product
         public ActionResult Index()
@@ -27,14 +27,13 @@ namespace Tas.Web.Controllers
             return View();
         }
 
-        // POST: Product/Create
         [HttpPost]
         public async Task<ActionResult> Create(CreateModel createModel)
         {
             try
             {
-                var result = await CeateProductCommandHandler.ExecuteAsync(
-                    new CreateProductCommand(
+                var result = await CeateProductRequestHandler.ExecuteAsync(
+                    new CreateProductRequest(
                         createModel.Name, 
                         createModel.Price, 
                         11));

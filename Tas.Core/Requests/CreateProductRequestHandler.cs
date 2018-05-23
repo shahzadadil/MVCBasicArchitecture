@@ -3,21 +3,21 @@ using System.Threading.Tasks;
 using Tas.Core.Repositories;
 using Tas.Data.Entities;
 
-namespace Tas.Core.Commands
+namespace Tas.Core.Requests
 {
-    public class CreateProductCommandHandler : ICommandHandler<CreateProductCommand, CreateProductResult>
+    public class CreateProductRequestHandler : IRequestHandler<CreateProductRequest, CreateProductResult>
     {
         public IGenericRepository<Product> ProductRepository { get; set; }
 
-        public async Task<CreateProductResult> ExecuteAsync(CreateProductCommand command)
+        public async Task<CreateProductResult> ExecuteAsync(CreateProductRequest request)
         {
-            var username = command.Username;
+            var username = request.Username;
             var time = DateTime.UtcNow;
 
             var product = new Product
             {
-                Name = command.Name,
-                Price = command.Price,
+                Name = request.Name,
+                Price = request.Price,
                 CreatedBy = username,
                 ModifiedBy = username,
                 CreatedOn = time,
