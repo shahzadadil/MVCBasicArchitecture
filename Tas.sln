@@ -1,0 +1,70 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tas.Web", "Tas.Web\Tas.Web.csproj", "{A814E4CE-863D-4391-A578-C401E8512003}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tas.Framework", "Tas.Framework\Tas.Framework.csproj", "{3AED036D-7726-4BE7-84E0-7CD4D8839CE0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tas.Core", "Tas.Core\Tas.Core.csproj", "{9F2B93AA-C22F-49A7-9D49-00B810C6D81B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tas.Data", "Tas.Data\Tas.Data.csproj", "{D879FB2D-A539-405A-BCEB-758B2799DB29}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tas.Core.Tests", "Tas.Core.Tests\Tas.Core.Tests.csproj", "{9B393B22-C6C9-4A68-8EA8-75C136E7613A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A814E4CE-863D-4391-A578-C401E8512003}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A814E4CE-863D-4391-A578-C401E8512003}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A814E4CE-863D-4391-A578-C401E8512003}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A814E4CE-863D-4391-A578-C401E8512003}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3AED036D-7726-4BE7-84E0-7CD4D8839CE0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3AED036D-7726-4BE7-84E0-7CD4D8839CE0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3AED036D-7726-4BE7-84E0-7CD4D8839CE0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3AED036D-7726-4BE7-84E0-7CD4D8839CE0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9F2B93AA-C22F-49A7-9D49-00B810C6D81B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F2B93AA-C22F-49A7-9D49-00B810C6D81B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9F2B93AA-C22F-49A7-9D49-00B810C6D81B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9F2B93AA-C22F-49A7-9D49-00B810C6D81B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D879FB2D-A539-405A-BCEB-758B2799DB29}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D879FB2D-A539-405A-BCEB-758B2799DB29}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D879FB2D-A539-405A-BCEB-758B2799DB29}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D879FB2D-A539-405A-BCEB-758B2799DB29}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9B393B22-C6C9-4A68-8EA8-75C136E7613A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9B393B22-C6C9-4A68-8EA8-75C136E7613A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9B393B22-C6C9-4A68-8EA8-75C136E7613A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9B393B22-C6C9-4A68-8EA8-75C136E7613A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C8C97F93-7380-43B8-835A-E3A870692787}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 6
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://shahzadadil.visualstudio.com/
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Tas.Core.Tests\\Tas.Core.Tests.csproj
+		SccProjectName1 = Tas.Core.Tests
+		SccLocalPath1 = Tas.Core.Tests
+		SccProjectUniqueName2 = Tas.Core\\Tas.Core.csproj
+		SccProjectName2 = Tas.Core
+		SccLocalPath2 = Tas.Core
+		SccProjectUniqueName3 = Tas.Data\\Tas.Data.csproj
+		SccProjectName3 = Tas.Data
+		SccLocalPath3 = Tas.Data
+		SccProjectUniqueName4 = Tas.Framework\\Tas.Framework.csproj
+		SccProjectName4 = Tas.Framework
+		SccLocalPath4 = Tas.Framework
+		SccProjectUniqueName5 = Tas.Web\\Tas.Web.csproj
+		SccProjectName5 = Tas.Web
+		SccLocalPath5 = Tas.Web
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,15 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    var message = TempData["StatusMessage"];
+}
+
+@if (message != null)
+{
+    <div class="alert alert-info">
+        <span>@message</span>
+    </div>
+}
+
+<h2>Index</h2>
+

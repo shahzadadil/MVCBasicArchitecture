@@ -1,0 +1,28 @@
+﻿using Castle.MicroKernel.Registration;
+using Castle.MicroKernel.SubSystems.Configuration;
+using Castle.Windsor;
+using Tas.Core.Commands;
+using Tas.Core.Repositories;
+
+namespace Tas.Web.Framework.Installers
+{
+    public class CoreInstaller : IWindsorInstaller
+    {
+        public void Install(IWindsorContainer container, IConfigurationStore store)
+        {
+            container.Register(
+                Classes
+                    .FromAssemblyContaining<ProductRepository>()
+                    .InSameNamespaceAs<ProductRepository>()
+                    .WithServiceAllInterfaces()
+                    .LifestyleTransient());
+
+            container.Register(
+                Classes
+                    .FromAssemblyContaining<ICommand>()
+                    .InSameNamespaceAs<ICommand>()
+                    .WithServiceAllInterfaces()
+                    .LifestyleTransient());
+        }
+    }
+}
